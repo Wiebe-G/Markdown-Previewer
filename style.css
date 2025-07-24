@@ -1,0 +1,46 @@
+:root {
+    --hoofd-tekst: rgb(0, 0, 0);
+    --alt-tekst: #000000;
+    --achtergrond: #63e4f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--hoofd-tekst);
+    background-color: var(--achtergrond);
+}
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 25px;
+    border: 1px solid var(--alt-tekst);
+    height: 50vh;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.input,
+.result {
+    text-align: center;
+    max-width: 50%;
+    min-width: 45%;
+    height: 100%;
+
+}
+
+
+.input textarea {
+    height: 90%;
+    width: 100%;
+    text-align: start;
+    vertical-align: top;
+}
